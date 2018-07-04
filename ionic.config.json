@@ -1,0 +1,14 @@
+{
+  "name": "Life Plus Coaching",
+  "app_id": "e5b998c9",
+  "type": "ionic1",
+  "integrations": {
+    "gulp": {}
+  },
+  "watchPatterns": [
+    "scss/**/*",
+    "www/**/*",
+    "!www/lib/**/*",
+    "!www/**/*.map"
+  ]
+}
