@@ -2,6 +2,10 @@
   "name": "Life Plus Coaching",
   "app_id": "e5b998c9",
   "type": "ionic1",
+  "gulpStartupTasks": [
+	  "sass", 
+	  "watch"
+  ],
   "integrations": {
     "gulp": {},
     "cordova": {}
