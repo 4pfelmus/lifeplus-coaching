@@ -7,6 +7,12 @@
 // 'starter.controllers' is found in controllers.js
 angular.module('app', ['ionic', 'app.controllers', 'app.routes', 'app.directives','app.services','firebase','firebaseConfig',])
 
+.run(function(){
+    Pro.init('e5b998c9', {
+        appVersion: '1.1.1'
+    });
+})
+
 .config(function($ionicConfigProvider, $sceDelegateProvider){
 
   $sceDelegateProvider.resourceUrlWhitelist([ 'self','*://www.youtube.com/**', '*://player.vimeo.com/video/**']);
