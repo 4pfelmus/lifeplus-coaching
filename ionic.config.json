@@ -1,19 +1,19 @@
 {
   "name": "Life Plus Coaching",
-  "app_id": "e5b998c9",
-  "type": "ionic1",
-  "gulpStartupTasks": [
-	  "sass", 
-	  "watch"
-  ],
   "integrations": {
     "gulp": {},
     "cordova": {}
   },
+  "type": "ionic1",
+  "gulpStartupTasks": [
+    "sass",
+    "watch"
+  ],
   "watchPatterns": [
     "scss/**/*",
     "www/**/*",
     "!www/lib/**/*",
     "!www/**/*.map"
-  ]
+  ],
+  "pro_id": "e5b998c9"
 }
