@@ -1,4 +1,4 @@
-angular.module('app.routes', [])
+angular.module('app.routes', ['ionicUIRouter'])
 
 .config(function($stateProvider, $urlRouterProvider) {
 
@@ -19,6 +19,46 @@ angular.module('app.routes', [])
     }
   })
 
+  .state('tabsController.videoLifeplus', {
+    url: '/page25',
+    views: {
+      'tab1': {
+        templateUrl: 'templates/videoLifeplus.html',
+        controller: 'videoLifeplusCtrl'
+      }
+    }
+  })
+
+  .state('tabsController.videoLifeplusBer', {
+    url: '/page17',
+    views: {
+      'tab1': {
+        templateUrl: 'templates/videoLifeplusBer.html',
+        controller: 'videoLifeplusBerCtrl'
+      }
+    }
+  })
+
+  .state('tabsController.videoLifeplusVon', {
+    url: '/page32',
+    views: {
+      'tab1': {
+        templateUrl: 'templates/videoLifeplusVon.html',
+        controller: 'videoLifeplusVonCtrl'
+      }
+    }
+  })
+
+  .state('tabsController.videoLifeplusEvents', {
+    url: '/page33',
+    views: {
+      'tab1': {
+        templateUrl: 'templates/videoLifeplusEvents.html',
+        controller: 'videoLifeplusEventsCtrl'
+      }
+    }
+  })
+
   .state('tabsController.videoCoachingHealth', {
     url: '/page6',
     views: {
@@ -29,22 +69,22 @@ angular.module('app.routes', [])
     }
   })
 
-  .state('tabsController.videoHealthNachDerKur', {
+  .state('tabsController.videoHealthGesundheit', {
     url: '/page22',
     views: {
       'tab1': {
-        templateUrl: 'templates/videoHealthNachDerKur.html',
-        controller: 'videoHealthNachDerKurCtrl'
+        templateUrl: 'templates/videoHealthGesundheit.html',
+        controller: 'videoHealthGesundheitCtrl'
       }
     }
   })
 
-  .state('tabsController.videoHealthHampel', {
+  .state('tabsController.videoHealthVitalstoffe', {
     url: '/page24',
     views: {
       'tab1': {
-        templateUrl: 'templates/videoHealthHampel.html',
-        controller: 'videoHealthHampelCtrl'
+        templateUrl: 'templates/videoHealthVitalstoffe.html',
+        controller: 'videoHealthVitalstoffeCtrl'
       }
     }
   })
@@ -55,6 +95,42 @@ angular.module('app.routes', [])
       'tab1': {
         templateUrl: 'templates/videoHealthDIEKUR.html',
         controller: 'videoHealthDIEKURCtrl'
+      }
+    }
+  })
+
+  .state('tabsController.videoHealthErfolge', {
+    url: '/page34',
+    views: {
+      'tab1': {
+        templateUrl: 'templates/videoHealthErfolge.html',
+        controller: 'videoHealthErfolgeCtrl'
+      }
+    }
+  })
+
+  .state('videoHealthErfolgeBilder', {
+    url: '/page35',
+    templateUrl: 'templates/videoHealthErfolgeBilder.html',
+    controller: 'videoHealthErfolgeBilderCtrl'
+  })
+
+  .state('tabsController.videoHealthErfolgeFacebook', {
+    url: '/page36',
+    views: {
+      'tab1': {
+        templateUrl: 'templates/videoHealthErfolgeFacebook.html',
+        controller: 'videoHealthErfolgeFacebookCtrl'
+      }
+    }
+  })
+
+  .state('tabsController.videoHealthErfolgeStorys', {
+    url: '/page37',
+    views: {
+      'tab1': {
+        templateUrl: 'templates/videoHealthErfolgeStorys.html',
+        controller: 'videoHealthErfolgeStorysCtrl'
       }
     }
   })
@@ -179,6 +255,16 @@ angular.module('app.routes', [])
     }
   })
 
+  .state('tabsController.beStrong', {
+    url: '/page38',
+    views: {
+      'tab3': {
+        templateUrl: 'templates/beStrong.html',
+        controller: 'beStrongCtrl'
+      }
+    }
+  })
+
   .state('tabsController.beBeauty', {
     url: '/page19',
     views: {
@@ -199,12 +285,29 @@ angular.module('app.routes', [])
     }
   })
 
-  .state('tabsController.nTzliches', {
+  /* 
+    The IonicUIRouter.js UI-Router Modification is being used for this route.
+    To navigate to this route, do NOT use a URL. Instead use one of the following:
+      1) Using the ui-sref HTML attribute:
+        ui-sref='tabsController.produkte'
+      2) Using $state.go programatically:
+        $state.go('tabsController.produkte');
+    This allows your app to figure out which Tab to open this page in on the fly.
+    If you're setting a Tabs default page or modifying the .otherwise for your app and
+    must use a URL, use one of the following:
+      /page1/tab1/page10
+      /page1/tab5/page10
+  */
+  .state('tabsController.produkte', {
     url: '/page10',
     views: {
+      'tab1': {
+        templateUrl: 'templates/produkte.html',
+        controller: 'produkteCtrl'
+      },
       'tab5': {
-        templateUrl: 'templates/nTzliches.html',
-        controller: 'nTzlichesCtrl'
+        templateUrl: 'templates/produkte.html',
+        controller: 'produkteCtrl'
       }
     }
   })
@@ -225,22 +328,12 @@ angular.module('app.routes', [])
     abstract:true
   })
 
-  .state('tabsController.einladungen', {
+  .state('tabsController.Borntobe', {
     url: '/page5',
     views: {
       'tab4': {
-        templateUrl: 'templates/einladungen.html',
-        controller: 'einladungenCtrl'
-      }
-    }
-  })
-
-  .state('tabsController.termine', {
-    url: '/page17',
-    views: {
-      'tab4': {
-        templateUrl: 'templates/termine.html',
-        controller: 'termineCtrl'
+        templateUrl: 'templates/Borntobe.html',
+        controller: 'BorntobeCtrl'
       }
     }
   })
