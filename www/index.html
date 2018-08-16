@@ -2,12 +2,14 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width" viewport-fit="cover">
     <title></title>
 
     <link rel="stylesheet" href="fonts/roboto/css/fonts.css">
     
     <script src="lib/ionic/js/ionic.bundle.js"></script>
+	<script src="/lib/ionic-pro/ionic-pro.module.min.js"></script>
+
 
     <!-- cordova script (this will be a 404 during development) -->
     <script src="cordova.js"></script>
@@ -58,9 +60,9 @@
     <script src="https://cdn.firebase.com/libs/angularfire/2.0.1/angularfire.min.js"></script>
     <script src="https://cdn.firebase.com/libs/firebaseui/1.0.0/firebaseui.js"></script>
 
-    
+    <!-- Only required for Tab projects w/ pages in multiple tabs 
     <script src="lib/ionicuirouter/ionicUIRouter.js"></script>
-    
+    -->
 
   </head>
   <body ng-app="app" animation="slide-left-right-ios7">
@@ -79,21 +81,20 @@
       <ion-header-bar class="bar-positive">
         <div class="title">COACHING AKADEMIE</div>
       </ion-header-bar>
-      <ion-content ng-controller="cOACHINGAKADEMIECtrl" padding="true" style="background: url(img/9R828YPaSFmT4xrPOgbn_gettyimages-183094765_1499086782-1040x690.jpg) no-repeat center;background-size:cover;" class="side-menu-left has-header ">
+      <ion-content ng-controller="cOACHINGAKADEMIECtrl" padding="false" style="background: url(img/9R828YPaSFmT4xrPOgbn_gettyimages-183094765_1499086782-1040x690.jpg) no-repeat center;background-size:cover;" class="side-menu-left has-header ">
         <div class="spacer" data-componentid="spacer36" style="width: 268px; height: 1px;"></div>
         <h1 id="cOACHINGAKADEMIE-heading1" style="color:#DBD1D1;font-style:italic;" data-componentid="heading1">DEIN WEG ZUM DIAMANT</h1>
-        <div class="spacer" data-componentid="spacer31" style="width: 268px; height: 50px;"></div>
+        <div class="spacer" data-componentid="spacer31" style="width: 268px; height: 102px;"></div>
+        <h4 id="cOACHINGAKADEMIE-heading21" style="color:#FFFFFF;font-style:italic;text-align:center;" data-componentid="heading21">DIAMANT-UPLINE:</h4>
+        <h5 id="cOACHINGAKADEMIE-heading23" style="color:#FFFFFF;text-align:center;" data-componentid="heading23">Kai Mäscher 0151/ 42 50 51 70</h5>
+        <h5 id="cOACHINGAKADEMIE-heading24" style="color:#FFFFFF;text-align:center;" data-componentid="heading24">Björn Pähler</h5>
+        <h5 id="cOACHINGAKADEMIE-heading25" style="color:#FFFFFF;text-align:center;" data-componentid="heading25">Thomas Kampmann</h5>
+        <h5 id="cOACHINGAKADEMIE-heading26" style="color:#FFFFFF;text-align:center;" data-componentid="heading26">Bianca Tomalski</h5>
         <div id="cOACHINGAKADEMIE-button-bar1" class="button-bar" data-componentid="button-bar1">
-          <a ui-sref="impressum()" menu-close="" id="cOACHINGAKADEMIE-button18" class="button button-positive button-small button-block" data-componentid="button18">Impressum</a>
-          <a ui-sref="datenschutzerklaerung()" menu-close="" id="cOACHINGAKADEMIE-button20" class="button button-positive button-small button-block" data-componentid="button20">Datenschutz</a>
+          <a ui-sref="impressum()" menu-close="" id="cOACHINGAKADEMIE-button18" class="button button-positive button-small button-block button-outline" data-componentid="button18">Impressum</a>
+          <a ui-sref="datenschutzerklaerung()" menu-close="" id="cOACHINGAKADEMIE-button20" class="button button-positive button-small button-block button-outline" data-componentid="button20">Datenschutz</a>
         </div>
-        <div id="cOACHINGAKADEMIE-markdown3" class="show-list-numbers-and-dots" data-componentid="markdown3">
-          <p style="color:#FFFFFF;">Kontakt zur Upline:
-            <strong>Kai Mäscher</strong> (WhatsApp) 0151/ 42 50 51 70</p>
-        </div>
-        <div style="margin-right:-20px;" data-componentid="button11">
-          <a ui-sref="login()" menu-close="" id="cOACHINGAKADEMIE-button11" style="left:-10px;" class="button button-stable button-full icon-left ion-log-out">Abmelden</a>
-        </div>
+        <a ui-sref="login()" menu-close="" id="cOACHINGAKADEMIE-button11" class="button button-stable button-full icon-left ion-log-out" data-componentid="button11">Abmelden</a>
       </ion-content>
     </ion-side-menu>
   </ion-side-menus>
