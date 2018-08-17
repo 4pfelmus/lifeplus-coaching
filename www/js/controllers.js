@@ -7,6 +7,10 @@ function ($scope, $stateParams) {
 firebase.auth().signOut().then(function() {
   // Sign-out successful.
   $state.go('tabsController.logout')
+  
+  console.log(user)
+
+  
 }).catch(function(error) {
   // An error happened.
 });
@@ -178,6 +182,14 @@ function ($scope, $stateParams) {
 // TIP: Access Route Parameters for your page via $stateParams.parameterName
 function ($scope, $stateParams) {
 
+    $(function(){
+        $("audio").on("play", function() {
+            $("audio").not(this).each(function(index, audio) {
+                audio.pause();
+            });
+        });
+    });
+
 
 }])
    
@@ -316,24 +328,7 @@ function ($scope, $stateParams,  $firebaseArray, $state) {
 // TIP: Access Route Parameters for your page via $stateParams.parameterName
 function ($scope, $stateParams, $firebaseArray, $state) {
     
-var user = firebase.auth().currentUser;
 
-user.sendEmailVerification().then(function() {
-  // Email sent.
-}).catch(function(error) {
-  // An error happened.
-});
-
-if (user !== null) {
-  user.providerData.forEach(function (profile) {
-    console.log("  Sign-in provider: " + profile.providerId);
-    console.log("  Provider-specific UID: " + profile.uid);
-    console.log("  Name: " + profile.displayName);
-    console.log("  Email: " + profile.email);
-    console.log("  Photo URL: " + profile.photoURL);
-    var displayName = profile.displayName;
-  });
-}
 
 }])
    
