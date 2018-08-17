@@ -182,13 +182,6 @@ function ($scope, $stateParams) {
 // TIP: Access Route Parameters for your page via $stateParams.parameterName
 function ($scope, $stateParams) {
 
-    $(function(){
-        $("audio").on("play", function() {
-            $("audio").not(this).each(function(index, audio) {
-                audio.pause();
-            });
-        });
-    });
 
 
 }])
