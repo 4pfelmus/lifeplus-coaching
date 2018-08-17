@@ -38,8 +38,6 @@ function ($scope, $stateParams) {
 // TIP: Access Route Parameters for your page via $stateParams.parameterName
 function ($scope, $stateParams) {
 
-	this.url = this.sanitizer.bypassSecurityTrustResourceUrl(this.videoLink);
-
 }])
    
 .controller('videoLifeplusEventsCtrl', ['$scope', '$stateParams', // The following is the constructor function for this page's controller. See https://docs.angularjs.org/guide/controller
@@ -183,13 +181,7 @@ function ($scope, $stateParams) {
 // TIP: Access Route Parameters for your page via $stateParams.parameterName
 function ($scope, $stateParams) {
 
-$(function(){
-    $("audio").on("play", function() {
-        $("audio").not(this).each(function(index, audio) {
-            audio.pause();
-        });
-    });
-});
+
 
 }])
    
