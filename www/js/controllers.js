@@ -38,6 +38,7 @@ function ($scope, $stateParams) {
 // TIP: Access Route Parameters for your page via $stateParams.parameterName
 function ($scope, $stateParams) {
 
+	this.url = this.sanitizer.bypassSecurityTrustResourceUrl(this.videoLink);
 
 }])
    
