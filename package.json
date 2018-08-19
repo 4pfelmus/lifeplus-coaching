@@ -11,6 +11,7 @@
   "dependencies": {
     "@ionic/pro": "^2.0.3",
     "@ionic/v1-toolkit": "^1.0.2",
+    "cordova-android": "^7.0.0",
     "cordova-ios": "^4.5.5",
     "cordova-plugin-device": "^2.0.2",
     "cordova-plugin-file": "^6.0.1",
@@ -42,7 +43,8 @@
       "cordova-plugin-whitelist": {}
     },
     "platforms": [
-      "ios"
+      "ios",
+      "android"
     ]
   }
 }
