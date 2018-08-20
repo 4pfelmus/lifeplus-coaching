@@ -10,8 +10,6 @@ angular.module('firebaseConfig', ['firebase'])
     storageBucket: "login-test-a46ec.appspot.com",
   };
   firebase.initializeApp(config);
-	firebase.auth().setPersistence(firebase.auth.Auth.Persistence.LOCAL)
-
 
 })
 
