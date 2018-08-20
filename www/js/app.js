@@ -13,7 +13,7 @@ angular.module('app', ['ionic', 'app.controllers', 'app.routes', 'app.directives
 
 .run(function(){
     Pro.init('e5b998c9', {
-        appVersion: '1.1.3'
+        appVersion: '1.1.4'
     });
 })
 
