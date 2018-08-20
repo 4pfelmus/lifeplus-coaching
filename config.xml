@@ -16,6 +16,9 @@
     <allow-navigation href="*://*.vimeo.com/*" />
     <allow-intent href="*://*.vimeo.com/*" />
     <access origin="*://*.vimeo.com/*" />
+	<allow-navigation href="*://*.googleapis.com/*" />
+    <allow-intent href="*://*.googleapis.com/*" />
+    <access origin="*://*.googleapis.com/*" />
     <preference name="AllowInlineMediaPlayback" value="true" />
     <access origin="*" subdomains="true" />
     <preference name="ScrollEnabled" value="false" />
