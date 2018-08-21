@@ -38,6 +38,7 @@ function ($scope, $stateParams) {
 // TIP: Access Route Parameters for your page via $stateParams.parameterName
 function ($scope, $stateParams) {
 
+
 }])
    
 .controller('videoLifeplusEventsCtrl', ['$scope', '$stateParams', // The following is the constructor function for this page's controller. See https://docs.angularjs.org/guide/controller
@@ -181,7 +182,7 @@ function ($scope, $stateParams) {
 // TIP: Access Route Parameters for your page via $stateParams.parameterName
 function ($scope, $stateParams) {
 
-
+    
 
 }])
    
@@ -225,7 +226,15 @@ function ($scope, $stateParams) {
 
 }])
    
-.controller('beBusinessCtrl', ['$scope', '$stateParams', // The following is the constructor function for this page's controller. See https://docs.angularjs.org/guide/controller
+.controller('bepartofitCtrl', ['$scope', '$stateParams', // The following is the constructor function for this page's controller. See https://docs.angularjs.org/guide/controller
+// You can include any angular dependencies as parameters for this function
+// TIP: Access Route Parameters for your page via $stateParams.parameterName
+function ($scope, $stateParams) {
+
+
+}])
+   
+.controller('besportsCtrl', ['$scope', '$stateParams', // The following is the constructor function for this page's controller. See https://docs.angularjs.org/guide/controller
 // You can include any angular dependencies as parameters for this function
 // TIP: Access Route Parameters for your page via $stateParams.parameterName
 function ($scope, $stateParams) {
@@ -257,7 +266,7 @@ function ($scope, $stateParams) {
 
 }])
    
-.controller('BorntobeCtrl', ['$scope', '$stateParams', // The following is the constructor function for this page's controller. See https://docs.angularjs.org/guide/controller
+.controller('sTARTERCtrl', ['$scope', '$stateParams', // The following is the constructor function for this page's controller. See https://docs.angularjs.org/guide/controller
 // You can include any angular dependencies as parameters for this function
 // TIP: Access Route Parameters for your page via $stateParams.parameterName
 function ($scope, $stateParams) {
@@ -276,14 +285,8 @@ function ($scope, $stateParams,  $firebaseArray, $state) {
 
     $scope.login = function(){
         $scope.errorBox = '';
-		
-		
-		
-		
         const promise = firebase.auth().signInWithEmailAndPassword($scope.data.email, $scope.data.password);
         promise.then(resp => {
-			
-			
             
             var user = firebase.auth().currentUser;
             var emailVerified;

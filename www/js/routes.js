@@ -115,24 +115,16 @@ angular.module('app.routes', ['ionicUIRouter'])
     controller: 'videoHealthErfolgeBilderCtrl'
   })
 
-  .state('tabsController.videoHealthErfolgeFacebook', {
+  .state('videoHealthErfolgeFacebook', {
     url: '/page36',
-    views: {
-      'tab1': {
-        templateUrl: 'templates/videoHealthErfolgeFacebook.html',
-        controller: 'videoHealthErfolgeFacebookCtrl'
-      }
-    }
+    templateUrl: 'templates/videoHealthErfolgeFacebook.html',
+    controller: 'videoHealthErfolgeFacebookCtrl'
   })
 
-  .state('tabsController.videoHealthErfolgeStorys', {
+  .state('videoHealthErfolgeStorys', {
     url: '/page37',
-    views: {
-      'tab1': {
-        templateUrl: 'templates/videoHealthErfolgeStorys.html',
-        controller: 'videoHealthErfolgeStorysCtrl'
-      }
-    }
+    templateUrl: 'templates/videoHealthErfolgeStorys.html',
+    controller: 'videoHealthErfolgeStorysCtrl'
   })
 
   .state('tabsController.videoCoachingBusiness', {
@@ -275,12 +267,22 @@ angular.module('app.routes', ['ionicUIRouter'])
     }
   })
 
-  .state('tabsController.beBusiness', {
+  .state('tabsController.bepartofit', {
     url: '/page20',
     views: {
       'tab3': {
-        templateUrl: 'templates/beBusiness.html',
-        controller: 'beBusinessCtrl'
+        templateUrl: 'templates/bepartofit.html',
+        controller: 'bepartofitCtrl'
+      }
+    }
+  })
+
+  .state('tabsController.besports', {
+    url: '/page39',
+    views: {
+      'tab3': {
+        templateUrl: 'templates/besports.html',
+        controller: 'besportsCtrl'
       }
     }
   })
@@ -328,12 +330,12 @@ angular.module('app.routes', ['ionicUIRouter'])
     abstract:true
   })
 
-  .state('tabsController.Borntobe', {
+  .state('tabsController.sTARTER', {
     url: '/page5',
     views: {
       'tab4': {
-        templateUrl: 'templates/Borntobe.html',
-        controller: 'BorntobeCtrl'
+        templateUrl: 'templates/sTARTER.html',
+        controller: 'sTARTERCtrl'
       }
     }
   })

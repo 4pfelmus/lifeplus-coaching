@@ -9806,6 +9806,9 @@ p {
   text-shadow: -1px -1px 1px #fff;
   text-shadow: 1px 1px 1px #000; }
 
+audio {
+  width: 100%; }
+
 .item-thumbnail-left p, .no-text-shadow p, .error-box p {
   text-shadow: 0px 0px 0px !important; }
 
