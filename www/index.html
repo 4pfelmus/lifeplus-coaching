@@ -14,7 +14,27 @@
     <script src="lib/ionic/js/ionic.bundle.js"></script>
     <script src="/lib/ionic-pro/ionic-pro.module.min.js"></script>
 	
-	  
+	  <script type="text/javascript">
+		var isPlaying = false;
+
+		function togglePlay() {
+			var myAudio = document.getElementById('audio1');
+			
+		  if (isPlaying) {
+			myAudio.pause();
+			document.getElementById('playbutton').classList.remove('ion-ios-pause');
+			document.getElementById('playbutton').classList.add('ion-ios-play');
+			console.log("Audio wurde pausiert.");
+			isPlaying = false;
+		  } else {
+			myAudio.play();
+			document.getElementById('playbutton').classList.remove('ion-ios-play');
+			document.getElementById('playbutton').classList.add('ion-ios-pause');
+			console.log("Audio wurde geplayed.");
+			isPlaying = true;
+		  }
+		};
+	</script>
 
     <!-- cordova script (this will be a 404 during development) -->
     <script src="cordova.js"></script>
