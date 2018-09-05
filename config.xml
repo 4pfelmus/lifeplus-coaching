@@ -102,5 +102,5 @@
         <variable name="UPDATE_API" value="https://api.ionicjs.com" />
         <variable name="MIN_BACKGROUND_DURATION" value="30" />
     </plugin>
-    <engine name="ios" spec="^4.5.5" />
+    <engine name="ios" spec="~4.5.5" />
 </widget>
