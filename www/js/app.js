@@ -36,6 +36,19 @@ angular.module('app', ['ionic', 'app.controllers', 'app.routes', 'app.directives
       // org.apache.cordova.statusbar required
       StatusBar.styleDefault();
     }
+	  if(window.Connection) {
+		if(navigator.connection.type == Connection.NONE) {
+			$ionicPopup.confirm({
+				title: "Internet Disconnected",
+				content: "The internet is disconnected on your device."
+			})
+			.then(function(result) {
+				if(!result) {
+					ionic.Platform.exitApp();
+				}
+			});
+		}
+	  }
   });
 })
 

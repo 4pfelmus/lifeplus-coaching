@@ -1,4 +1,20 @@
 @charset "UTF-8";
+/*
+To customize the look and feel of Ionic, you can override the variables
+in ionic's _variables.scss file.
+
+For example, you might change some of the default colors:
+
+$light:                           #fff !default;
+$stable:                          #f8f8f8 !default;
+$positive:                        #387ef5 !default;
+$calm:                            #11c1f3 !default;
+$balanced:                        #33cd5f !default;
+$energized:                       #ffc900 !default;
+$assertive:                       #ef473a !default;
+$royal:                           #886aea !default;
+$dark:                            #444 !default;
+*/
 /*!
   Ionicons, v2.0.1
   Created by Ben Sperry for the Ionic Framework, http://ionicons.com/
@@ -3069,7 +3085,7 @@ a:hover {
  */
 a {
   -webkit-user-drag: none;
-  -webkit-tap-highlight-color: transparent;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
   -webkit-tap-highlight-color: transparent; }
   a[href]:hover {
     cursor: pointer; }
@@ -3306,7 +3322,7 @@ body,
   -webkit-text-size-adjust: none;
   -moz-text-size-adjust: none;
   text-size-adjust: none;
-  -webkit-tap-highlight-color: transparent;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
   -webkit-tap-highlight-color: transparent;
   -webkit-user-select: none;
   -moz-user-select: none;
@@ -3491,25 +3507,25 @@ ion-infinite-scroll {
 
 /* If you change these, change platform.scss as well */
 .has-header {
-  top: 65px !important; }
+  top: 44px; }
 
 .no-header {
   top: 0; }
 
 .has-subheader {
-  top: 65px !important65px !important; }
+  top: 88px; }
 
 .has-tabs-top {
-  top: 65px !important49px; }
+  top: 93px; }
 
 .has-header.has-subheader.has-tabs-top {
-  top: 65px !important65px !important49px; }
+  top: 137px; }
 
 .has-footer {
-  bottom: 65px !important; }
+  bottom: 44px; }
 
 .has-subfooter {
-  bottom: 65px !important65px !important; }
+  bottom: 88px; }
 
 .has-tabs,
 .bar-footer.has-tabs {
@@ -3520,10 +3536,10 @@ ion-infinite-scroll {
     height: auto; }
 
 .bar-subfooter.has-tabs {
-  bottom: 49px65px !important; }
+  bottom: 93px; }
 
 .has-footer.has-tabs {
-  bottom: 49px65px !important; }
+  bottom: 93px; }
 
 .pane {
   -webkit-transform: translate3d(0, 0, 0);
@@ -3715,7 +3731,7 @@ a.subdued {
   z-index: 11;
   width: 100%;
   height: 100%;
-  background-color: transparent; }
+  background-color: rgba(0, 0, 0, 0); }
   .action-sheet-backdrop.active {
     background-color: rgba(0, 0, 0, 0.4); }
 
@@ -3869,7 +3885,7 @@ a.subdued {
   box-sizing: border-box;
   padding: 5px;
   width: 100%;
-  height: 65px !important;
+  height: 44px;
   border-width: 0;
   border-style: solid;
   border-top: 1px solid transparent;
@@ -3991,13 +4007,13 @@ a.subdued {
     overflow: hidden;
     margin: 0 10px;
     min-width: 30px;
-    height: 65px !important-1;
+    height: 43px;
     text-align: center;
     text-overflow: ellipsis;
     white-space: nowrap;
-    font-size: 0px;
+    font-size: 17px;
     font-weight: 500;
-    line-height: 65px !important; }
+    line-height: 44px; }
     .bar .title.title-left {
       text-align: left; }
     .bar .title.title-right {
@@ -4020,7 +4036,7 @@ a.subdued {
       font-size: 20px;
       line-height: 32px; }
     .bar .button.button-icon, .bar button.button-icon {
-      font-size: 0px; }
+      font-size: 17px; }
       .bar .button.button-icon .icon:before, .bar .button.button-icon:before, .bar .button.button-icon.icon-left:before, .bar .button.button-icon.icon-right:before, .bar button.button-icon .icon:before, .bar button.button-icon:before, .bar button.button-icon.icon-left:before, .bar button.button-icon.icon-right:before {
         vertical-align: top;
         font-size: 32px;
@@ -4029,7 +4045,7 @@ a.subdued {
       padding-right: 2px;
       padding-left: 2px;
       font-weight: 300;
-      font-size: 0px; }
+      font-size: 17px; }
       .bar .button.button-clear .icon:before, .bar .button.button-clear.icon:before, .bar .button.button-clear.icon-left:before, .bar .button.button-clear.icon-right:before, .bar button.button-clear .icon:before, .bar button.button-clear.icon:before, .bar button.button-clear.icon-left:before, .bar button.button-clear.icon-right:before {
         font-size: 32px;
         line-height: 32px; }
@@ -4078,7 +4094,7 @@ a.subdued {
 
 .platform-android .bar .title {
   font-size: 19px;
-  line-height: 65px !important; }
+  line-height: 44px; }
 
 .bar-light .button {
   border-color: #ddd;
@@ -4095,7 +4111,7 @@ a.subdued {
     background: none;
     box-shadow: none;
     color: #444;
-    font-size: 0px; }
+    font-size: 17px; }
   .bar-light .button.button-icon {
     border-color: transparent;
     background: none; }
@@ -4115,7 +4131,7 @@ a.subdued {
     background: none;
     box-shadow: none;
     color: #444;
-    font-size: 0px; }
+    font-size: 17px; }
   .bar-stable .button.button-icon {
     border-color: transparent;
     background: none; }
@@ -4135,7 +4151,7 @@ a.subdued {
     background: none;
     box-shadow: none;
     color: #fff;
-    font-size: 0px; }
+    font-size: 17px; }
   .bar-positive .button.button-icon {
     border-color: transparent;
     background: none; }
@@ -4155,7 +4171,7 @@ a.subdued {
     background: none;
     box-shadow: none;
     color: #fff;
-    font-size: 0px; }
+    font-size: 17px; }
   .bar-calm .button.button-icon {
     border-color: transparent;
     background: none; }
@@ -4175,7 +4191,7 @@ a.subdued {
     background: none;
     box-shadow: none;
     color: #fff;
-    font-size: 0px; }
+    font-size: 17px; }
   .bar-assertive .button.button-icon {
     border-color: transparent;
     background: none; }
@@ -4195,7 +4211,7 @@ a.subdued {
     background: none;
     box-shadow: none;
     color: #fff;
-    font-size: 0px; }
+    font-size: 17px; }
   .bar-balanced .button.button-icon {
     border-color: transparent;
     background: none; }
@@ -4215,7 +4231,7 @@ a.subdued {
     background: none;
     box-shadow: none;
     color: #fff;
-    font-size: 0px; }
+    font-size: 17px; }
   .bar-energized .button.button-icon {
     border-color: transparent;
     background: none; }
@@ -4235,7 +4251,7 @@ a.subdued {
     background: none;
     box-shadow: none;
     color: #fff;
-    font-size: 0px; }
+    font-size: 17px; }
   .bar-royal .button.button-icon {
     border-color: transparent;
     background: none; }
@@ -4255,7 +4271,7 @@ a.subdued {
     background: none;
     box-shadow: none;
     color: #fff;
-    font-size: 0px; }
+    font-size: 17px; }
   .bar-dark .button.button-icon {
     border-color: transparent;
     background: none; }
@@ -4277,29 +4293,29 @@ a.subdued {
   border-top-width: 1px;
   border-bottom-width: 0;
   background-position: top;
-  height: 65px !important; }
+  height: 44px; }
   .bar-footer.item-input-inset {
     position: absolute; }
   .bar-footer .title {
-    height: 65px !important-1;
-    line-height: 65px !important; }
+    height: 43px;
+    line-height: 44px; }
 
 .bar-tabs {
   padding: 0; }
 
 .bar-subheader {
-  top: 65px !important;
-  height: 65px !important; }
+  top: 44px;
+  height: 44px; }
   .bar-subheader .title {
-    height: 65px !important-1;
-    line-height: 65px !important; }
+    height: 43px;
+    line-height: 44px; }
 
 .bar-subfooter {
-  bottom: 65px !important;
-  height: 65px !important; }
+  bottom: 44px;
+  height: 44px; }
   .bar-subfooter .title {
-    height: 65px !important-1;
-    line-height: 65px !important; }
+    height: 43px;
+    line-height: 44px; }
 
 .nav-bar-block {
   position: absolute;
@@ -5072,7 +5088,7 @@ ion-tabs.tabs-striped.tabs-color-active-dark .tab-item.tab-item-active, ion-tabs
 /* If you change this, change platform.scss as well */
 .tabs-top > .tabs,
 .tabs.tabs-top {
-  top: 65px !important;
+  top: 44px;
   padding-top: 0;
   background-position: bottom;
   border-top-width: 0;
@@ -5341,21 +5357,21 @@ ion-tabs.tabs-striped.tabs-color-active-dark .tab-item.tab-item-active, ion-tabs
   .modal.ng-leave-active {
     bottom: 0; }
   .platform-ios.platform-cordova .modal-wrapper .modal .bar-header:not(.bar-subheader) {
-    height: 65px !important; }
+    height: 44px; }
     .platform-ios.platform-cordova .modal-wrapper .modal .bar-header:not(.bar-subheader) > * {
       margin-top: 0; }
   .platform-ios.platform-cordova .modal-wrapper .modal .tabs-top > .tabs,
   .platform-ios.platform-cordova .modal-wrapper .modal .tabs.tabs-top {
-    top: 65px !important; }
+    top: 44px; }
   .platform-ios.platform-cordova .modal-wrapper .modal .has-header,
   .platform-ios.platform-cordova .modal-wrapper .modal .bar-subheader {
-    top: 65px !important; }
+    top: 44px; }
   .platform-ios.platform-cordova .modal-wrapper .modal .has-subheader {
-    top: 65px !important65px !important; }
+    top: 88px; }
   .platform-ios.platform-cordova .modal-wrapper .modal .has-header.has-tabs-top {
-    top: 65px !important49px; }
+    top: 93px; }
   .platform-ios.platform-cordova .modal-wrapper .modal .has-header.has-subheader.has-tabs-top {
-    top: 65px !important65px !important49px; }
+    top: 137px; }
   .modal-backdrop-bg {
     -webkit-transition: opacity 300ms ease-in-out;
     transition: opacity 300ms ease-in-out;
@@ -5385,7 +5401,7 @@ ion-tabs.tabs-striped.tabs-color-active-dark .tab-item.tab-item-active, ion-tabs
   z-index: 10;
   width: 100%;
   height: 100%;
-  background-color: transparent; }
+  background-color: rgba(0, 0, 0, 0); }
   .popover-backdrop.active {
     background-color: rgba(0, 0, 0, 0.1); }
 
@@ -5509,7 +5525,7 @@ ion-tabs.tabs-striped.tabs-color-active-dark .tab-item.tab-item-active, ion-tabs
   left: 0;
   bottom: 0;
   right: 0;
-  background: transparent;
+  background: rgba(0, 0, 0, 0);
   display: -webkit-box;
   display: -webkit-flex;
   display: -moz-box;
@@ -7086,51 +7102,51 @@ button.swiper-pagination-bullet {
   z-index: 10; }
 
 .swiper-container-3d .swiper-slide-shadow-left {
-  background-image: -webkit-gradient(linear, left top, right top, from(rgba(0, 0, 0, 0.5)), to(transparent));
+  background-image: -webkit-gradient(linear, left top, right top, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0)));
   /* Safari 4+, Chrome */
-  background-image: -webkit-linear-gradient(right, rgba(0, 0, 0, 0.5), transparent);
+  background-image: -webkit-linear-gradient(right, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0));
   /* Chrome 10+, Safari 5.1+, iOS 5+ */
-  background-image: -moz-linear-gradient(right, rgba(0, 0, 0, 0.5), transparent);
+  background-image: -moz-linear-gradient(right, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0));
   /* Firefox 3.6-15 */
-  background-image: -o-linear-gradient(right, rgba(0, 0, 0, 0.5), transparent);
+  background-image: -o-linear-gradient(right, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0));
   /* Opera 11.10-12.00 */
-  background-image: linear-gradient(to left, rgba(0, 0, 0, 0.5), transparent);
+  background-image: linear-gradient(to left, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0));
   /* Firefox 16+, IE10, Opera 12.50+ */ }
 
 .swiper-container-3d .swiper-slide-shadow-right {
-  background-image: -webkit-gradient(linear, right top, left top, from(rgba(0, 0, 0, 0.5)), to(transparent));
+  background-image: -webkit-gradient(linear, right top, left top, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0)));
   /* Safari 4+, Chrome */
-  background-image: -webkit-linear-gradient(left, rgba(0, 0, 0, 0.5), transparent);
+  background-image: -webkit-linear-gradient(left, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0));
   /* Chrome 10+, Safari 5.1+, iOS 5+ */
-  background-image: -moz-linear-gradient(left, rgba(0, 0, 0, 0.5), transparent);
+  background-image: -moz-linear-gradient(left, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0));
   /* Firefox 3.6-15 */
-  background-image: -o-linear-gradient(left, rgba(0, 0, 0, 0.5), transparent);
+  background-image: -o-linear-gradient(left, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0));
   /* Opera 11.10-12.00 */
-  background-image: linear-gradient(to right, rgba(0, 0, 0, 0.5), transparent);
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0));
   /* Firefox 16+, IE10, Opera 12.50+ */ }
 
 .swiper-container-3d .swiper-slide-shadow-top {
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(transparent));
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0)));
   /* Safari 4+, Chrome */
-  background-image: -webkit-linear-gradient(bottom, rgba(0, 0, 0, 0.5), transparent);
+  background-image: -webkit-linear-gradient(bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0));
   /* Chrome 10+, Safari 5.1+, iOS 5+ */
-  background-image: -moz-linear-gradient(bottom, rgba(0, 0, 0, 0.5), transparent);
+  background-image: -moz-linear-gradient(bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0));
   /* Firefox 3.6-15 */
-  background-image: -o-linear-gradient(bottom, rgba(0, 0, 0, 0.5), transparent);
+  background-image: -o-linear-gradient(bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0));
   /* Opera 11.10-12.00 */
-  background-image: linear-gradient(to top, rgba(0, 0, 0, 0.5), transparent);
+  background-image: linear-gradient(to top, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0));
   /* Firefox 16+, IE10, Opera 12.50+ */ }
 
 .swiper-container-3d .swiper-slide-shadow-bottom {
-  background-image: -webkit-gradient(linear, left bottom, left top, from(rgba(0, 0, 0, 0.5)), to(transparent));
+  background-image: -webkit-gradient(linear, left bottom, left top, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0)));
   /* Safari 4+, Chrome */
-  background-image: -webkit-linear-gradient(top, rgba(0, 0, 0, 0.5), transparent);
+  background-image: -webkit-linear-gradient(top, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0));
   /* Chrome 10+, Safari 5.1+, iOS 5+ */
-  background-image: -moz-linear-gradient(top, rgba(0, 0, 0, 0.5), transparent);
+  background-image: -moz-linear-gradient(top, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0));
   /* Firefox 3.6-15 */
-  background-image: -o-linear-gradient(top, rgba(0, 0, 0, 0.5), transparent);
+  background-image: -o-linear-gradient(top, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0));
   /* Opera 11.10-12.00 */
-  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), transparent);
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0));
   /* Firefox 16+, IE10, Opera 12.50+ */ }
 
 /* Coverflow */
@@ -8492,8 +8508,8 @@ input:checked + .checkbox-icon:after {
     width: 0;
     height: 0;
     border-top: 5px solid;
-    border-right: 5px solid transparent;
-    border-left: 5px solid transparent;
+    border-right: 5px solid rgba(0, 0, 0, 0);
+    border-left: 5px solid rgba(0, 0, 0, 0);
     color: #999;
     content: "";
     pointer-events: none; }
@@ -9378,7 +9394,7 @@ a.button {
   -ms-user-select: none;
   user-select: none;
   -webkit-touch-callout: none;
-  -webkit-tap-highlight-color: transparent;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
   -webkit-tap-highlight-color: transparent;
   -webkit-user-drag: none;
   -ms-touch-action: none;
@@ -9583,7 +9599,7 @@ a.button {
  * Platform specific tweaks
  */
 .platform-ios.platform-cordova:not(.fullscreen) .bar-header:not(.bar-subheader) {
-  height: 65px !important20px; }
+  height: 64px; }
   .platform-ios.platform-cordova:not(.fullscreen) .bar-header:not(.bar-subheader).item-input-inset .item-input-wrapper {
     margin-top: 19px !important; }
   .platform-ios.platform-cordova:not(.fullscreen) .bar-header:not(.bar-subheader) > * {
@@ -9591,23 +9607,23 @@ a.button {
 
 .platform-ios.platform-cordova:not(.fullscreen) .tabs-top > .tabs,
 .platform-ios.platform-cordova:not(.fullscreen) .tabs.tabs-top {
-  top: 65px !important20px; }
+  top: 64px; }
 
 .platform-ios.platform-cordova:not(.fullscreen) .has-header,
 .platform-ios.platform-cordova:not(.fullscreen) .bar-subheader {
-  top: 65px !important20px; }
+  top: 64px; }
 
 .platform-ios.platform-cordova:not(.fullscreen) .has-subheader {
-  top: 65px !important65px !important20px; }
+  top: 108px; }
 
 .platform-ios.platform-cordova:not(.fullscreen) .has-header.has-tabs-top {
-  top: 65px !important49px20px; }
+  top: 113px; }
 
 .platform-ios.platform-cordova:not(.fullscreen) .has-header.has-subheader.has-tabs-top {
-  top: 65px !important65px !important49px20px; }
+  top: 157px; }
 
 .platform-ios.platform-cordova .popover .bar-header:not(.bar-subheader) {
-  height: 65px !important; }
+  height: 44px; }
   .platform-ios.platform-cordova .popover .bar-header:not(.bar-subheader).item-input-inset .item-input-wrapper {
     margin-top: -1px; }
   .platform-ios.platform-cordova .popover .bar-header:not(.bar-subheader) > * {
@@ -9615,10 +9631,10 @@ a.button {
 
 .platform-ios.platform-cordova .popover .has-header,
 .platform-ios.platform-cordova .popover .bar-subheader {
-  top: 65px !important; }
+  top: 44px; }
 
 .platform-ios.platform-cordova .popover .has-subheader {
-  top: 65px !important65px !important; }
+  top: 88px; }
 
 .platform-ios.platform-cordova.status-bar-hide {
   margin-bottom: 20px; }
@@ -9798,581 +9814,3 @@ a.button {
   opacity: 0;
   -webkit-transition-duration: 0s;
   transition-duration: 0s; }
-
-.col-sm-6 {
-  width: 45%; }
-
-p {
-  text-shadow: -1px -1px 1px #fff;
-  text-shadow: 1px 1px 1px #000; }
-
-audio {
-  width: 100%; }
-
-.item-thumbnail-left p, .no-text-shadow p, .error-box p {
-  text-shadow: 0px 0px 0px !important; }
-
-.overlay-black {
-  background: rgba(0, 0, 0, 0.5);
-  border-radius: 20px; }
-
-.shadow {
-  box-shadow: 2px 2px 3px #000; }
-
-.shadow-round {
-  box-shadow: 2px 2px 5px #000, -2px -2px 5px #000;
-  border-radius: 1000px; }
-
-.clear {
-  clear: both; }
-
-.right {
-  float: right; }
-
-.left {
-  float: left;
-  display: inherit; }
-
-.block {
-  display: block; }
-
-.inline {
-  display: inline; }
-
-.login-form {
-  opacity: 0.95; }
-
-h1 {
-  font-weight: 200;
-  color: #398CDB !important;
-  text-align: center; }
-
-h3 {
-  font-weight: 200;
-  color: #ffffff !important;
-  text-align: center; }
-
-.error-box {
-  padding: 6px;
-  border-radius: 4px;
-  text-align: center;
-  color: #ef473a;
-  font-weight: 600; }
-
-#signup-list4 span {
-  font-size: 14px;
-  color: grey; }
-
-/*
- * Copyright 2016 Google Inc. All Rights Reserved.
- *
- * Licensed under the Apache License, Version 2.0 (the "License"); you may not use this file except
- * in compliance with the License. You may obtain a copy of the License at
- *
- * http://www.apache.org/licenses/LICENSE-2.0
- *
- * Unless required by applicable law or agreed to in writing, software distributed under the
- * License is distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either
- * express or implied. See the License for the specific language governing permissions and
- * limitations under the License.
- */
-/**
- * CSS for FirebaseUI Javascript widget.
- * All selectors should begin with a "firebaseui-" prefix to avoid conflicts.
- */
-.firebaseui-container {
-  background-color: #fff;
-  box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  -webkit-box-sizing: border-box;
-  color: rgba(0, 0, 0, 0.87);
-  direction: ltr;
-  font: 16px Roboto, arial, sans-serif;
-  margin: 0 auto;
-  max-width: 360px;
-  overflow: hidden;
-  position: relative;
-  text-align: left;
-  width: 100%; }
-
-.firebaseui-card-header {
-  padding: 24px 24px 0 24px; }
-
-.firebaseui-card-content {
-  padding: 0 24px; }
-
-.firebaseui-card-footer {
-  padding: 0 24px; }
-
-.firebaseui-card-actions {
-  box-sizing: border-box;
-  display: table;
-  font-size: 14px;
-  padding: 8px 24px 24px 24px;
-  text-align: left;
-  width: 100%; }
-
-.firebaseui-form-links {
-  display: table-cell;
-  vertical-align: middle;
-  width: 100%; }
-
-.firebaseui-form-actions {
-  display: table-cell;
-  text-align: right;
-  white-space: nowrap;
-  width: 100%; }
-
-.firebaseui-title,
-.firebaseui-subtitle {
-  color: rgba(0, 0, 0, 0.87);
-  direction: ltr;
-  font-size: 20px;
-  font-weight: 500;
-  line-height: 24px;
-  margin: 0;
-  padding: 0;
-  text-align: left; }
-
-.firebaseui-title {
-  padding-bottom: 20px; }
-
-.firebaseui-subtitle {
-  margin: 16px 0; }
-
-.firebaseui-text {
-  color: rgba(0, 0, 0, 0.87);
-  direction: ltr;
-  font-size: 16px;
-  line-height: 24px;
-  text-align: left; }
-
-.firebaseui-text-emphasis {
-  font-weight: 700; }
-
-.firebaseui-error {
-  color: #dd2c00;
-  direction: ltr;
-  font-size: 12px;
-  line-height: 16px;
-  margin: 0;
-  text-align: left; }
-
-.firebaseui-text-input-error {
-  /* Set a negative margin, as MDL text inputs have a large bottom margin. */
-  margin: -16px 0 16px; }
-
-.firebaseui-error-wrapper {
-  min-height: 16px; }
-
-.firebaseui-list-item {
-  direction: ltr;
-  margin: 0;
-  padding: 0;
-  text-align: left; }
-
-.firebaseui-hidden {
-  display: none; }
-
-.firebaseui-relative-wrapper {
-  position: relative; }
-
-.firebaseui-label {
-  color: rgba(0, 0, 0, 0.54);
-  direction: ltr;
-  font-size: 16px;
-  text-align: left; }
-
-/* Override MDL floating text field label color. */
-.mdl-textfield--floating-label.is-focused .mdl-textfield__label,
-.mdl-textfield--floating-label.is-dirty .mdl-textfield__label {
-  color: #757575; }
-
-.firebaseui-input,
-.firebaseui-input-invalid {
-  border-radius: 0;
-  /** iOS puts rounded corners on text inputs. */
-  color: rgba(0, 0, 0, 0.87);
-  direction: ltr;
-  font-size: 16px;
-  width: 100%; }
-
-input.firebaseui-input,
-input.firebaseui-input-invalid {
-  direction: ltr;
-  text-align: left; }
-
-.firebaseui-input-invalid {
-  border-color: #dd2c00; }
-
-.firebaseui-textfield {
-  width: 100%; }
-
-/* Override MDL's error handling with our own.  */
-.firebaseui-textfield.mdl-textfield .firebaseui-input {
-  border-color: rgba(0, 0, 0, 0.12); }
-
-.firebaseui-textfield.mdl-textfield .firebaseui-label::after {
-  background-color: #3f51b5; }
-
-.firebaseui-textfield-invalid.mdl-textfield .firebaseui-input {
-  border-color: #dd2c00; }
-
-.firebaseui-textfield-invalid.mdl-textfield .firebaseui-label::after {
-  background-color: #dd2c00; }
-
-.firebaseui-button {
-  display: inline-block;
-  height: 36px;
-  margin-left: 8px;
-  min-width: 88px; }
-
-.firebaseui-link {
-  color: #4285f4;
-  font-variant: normal;
-  font-weight: normal;
-  text-decoration: none; }
-
-.firebaseui-link:hover {
-  text-decoration: underline; }
-
-.firebaseui-indent {
-  margin-left: 1em; }
-
-.firebaseui-tos {
-  color: #757575;
-  direction: ltr;
-  font-size: 12px;
-  line-height: 16px;
-  margin-bottom: 24px;
-  margin-top: 0;
-  text-align: left; }
-
-.firebaseui-page-provider-sign-in {
-  background: inherit; }
-
-.firebaseui-idp-list {
-  list-style: none;
-  margin: 1em 0;
-  padding: 0; }
-
-.firebaseui-idp-button {
-  direction: ltr;
-  font-weight: 500;
-  height: auto;
-  line-height: normal;
-  max-width: 220px;
-  min-height: 40px;
-  padding: 8px 16px;
-  text-align: left;
-  width: 100%; }
-
-.firebaseui-idp-list > .firebaseui-list-item {
-  margin-bottom: 15px;
-  text-align: center; }
-
-.firebaseui-idp-icon-wrapper {
-  display: table-cell;
-  vertical-align: middle; }
-
-.firebaseui-idp-icon {
-  border: none;
-  display: inline-block;
-  height: 18px;
-  vertical-align: middle;
-  width: 18px; }
-
-.firebaseui-idp-favicon {
-  border: none;
-  display: inline-block;
-  height: 14px;
-  margin-right: 5px;
-  vertical-align: middle;
-  width: 14px; }
-
-.firebaseui-idp-text {
-  color: #fff;
-  display: table-cell;
-  font-size: 14px;
-  padding-left: 16px;
-  text-transform: none;
-  vertical-align: middle; }
-
-.firebaseui-idp-text.firebaseui-idp-text-long {
-  display: table-cell; }
-
-.firebaseui-idp-text.firebaseui-idp-text-short {
-  display: none; }
-
-/* 220px for button + 2x24 for margin = 268px */
-@media (max-width: 268px) {
-  .firebaseui-idp-text.firebaseui-idp-text-long {
-    display: none; }
-  .firebaseui-idp-text.firebaseui-idp-text-short {
-    display: table-cell; } }
-
-/* Resize reCAPTCHA container on narrow mobile devices. */
-@media (max-width: 320px) {
-  .firebaseui-recaptcha-container > div > div {
-    transform: scale(0.9);
-    -webkit-transform: scale(0.9);
-    transform-origin: 0 0;
-    -webkit-transform-origin: 0 0; } }
-
-.firebaseui-idp-password,
-.firebaseui-idp-password:hover,
-.mdl-button.firebaseui-idp-password:active,
-.mdl-button.firebaseui-idp-password:focus {
-  background-color: #db4437; }
-
-.firebaseui-idp-phone,
-.firebaseui-idp-phone:hover,
-.mdl-button.firebaseui-idp-phone:active,
-.mdl-button.firebaseui-idp-phone:focus {
-  background-color: #02bd7e; }
-
-.firebaseui-idp-google,
-.firebaseui-idp-google:hover,
-.mdl-button.firebaseui-idp-google:active,
-.mdl-button.firebaseui-idp-google:focus {
-  background-color: #ffffff; }
-
-.firebaseui-idp-google > .firebaseui-idp-text {
-  color: #757575; }
-
-.firebaseui-idp-github,
-.firebaseui-idp-github:hover,
-.mdl-button.firebaseui-idp-github:active,
-.mdl-button.firebaseui-idp-github:focus {
-  background-color: #333333; }
-
-.firebaseui-idp-facebook,
-.firebaseui-idp-facebook:hover,
-.mdl-button.firebaseui-idp-facebook:active,
-.mdl-button.firebaseui-idp-facebook:focus {
-  background-color: #3b5998; }
-
-.firebaseui-idp-twitter,
-.firebaseui-idp-twitter:hover,
-.mdl-button.firebaseui-idp-twitter:active,
-.mdl-button.firebaseui-idp-twitter:focus {
-  background-color: #55acee; }
-
-.firebaseui-info-bar {
-  background-color: #f9edbe;
-  border: 1px solid #f0c36d;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
-  -webkit-box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
-  -moz-box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
-  left: 10%;
-  padding: 8px 16px;
-  position: absolute;
-  right: 10%;
-  text-align: center;
-  top: 0; }
-
-.firebaseui-info-bar-message {
-  font-size: 12px;
-  margin: 0; }
-
-.firebaseui-dialog {
-  box-sizing: border-box;
-  /* We need to set these properties again since dialogs are not contained in
-   * the main FirebaseUI container. */
-  color: rgba(0, 0, 0, 0.87);
-  font: 16px Roboto, arial, sans-serif;
-  /* If we do not set height here, the default Safari dialog settings make the
-   * dialog too tall. */
-  height: auto;
-  padding: 24px;
-  text-align: left; }
-
-.firebaseui-dialog-icon-wrapper {
-  display: table-cell;
-  vertical-align: middle; }
-
-.firebaseui-dialog-icon {
-  float: left;
-  height: 40px;
-  margin-right: 24px;
-  width: 40px; }
-
-.firebaseui-progress-dialog-message {
-  display: table-cell;
-  font-size: 16px;
-  font-weight: 400;
-  min-height: 40px;
-  vertical-align: middle; }
-
-.firebaseui-progress-dialog-loading-icon {
-  height: 28px;
-  margin: 6px 30px 6px 6px;
-  width: 28px; }
-
-.firebaseui-icon-done {
-  background-image: url("https://www.gstatic.com/images/icons/material/system/2x/done_googgreen_36dp.png");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: 36px 36px; }
-
-.firebaseui-phone-number {
-  display: flex; }
-
-.firebaseui-country-selector {
-  /* TODO: Use 2x for HD displays. */
-  background-image: url("https://www.gstatic.com/images/icons/material/system/1x/arrow_drop_down_grey600_18dp.png");
-  background-position: right center;
-  background-repeat: no-repeat;
-  background-size: 18px auto;
-  border-radius: 0;
-  border-bottom: 1px solid rgba(0, 0, 0, 0.12);
-  color: rgba(0, 0, 0, 0.87);
-  flex-shrink: 0;
-  font-size: 16px;
-  font-weight: normal;
-  height: initial;
-  line-height: normal;
-  margin: 20px 24px 20px 0;
-  padding: 4px 20px 4px 0;
-  width: 90px; }
-
-.firebaseui-country-selector-flag {
-  display: inline-block;
-  margin-right: 1ex; }
-
-.firebaseui-flag {
-  background-image: url("https://www.gstatic.com/firebasejs/ui/2.0.0/images/auth/flags_sprite_2x.png");
-  background-size: 100% auto;
-  /* Set a drop shadow so white flags are more distinct. */
-  filter: drop-shadow(1px 1px 1px rgba(0, 0, 0, 0.54));
-  height: 14px;
-  width: 24px; }
-
-.firebaseui-list-box-dialog {
-  max-height: 90%;
-  overflow: auto;
-  padding: 8px 0 0 0; }
-
-.firebaseui-list-box-actions {
-  padding-bottom: 8px; }
-
-.firebaseui-list-box-icon-wrapper {
-  display: table-cell;
-  padding-right: 24px;
-  vertical-align: top; }
-
-.firebaseui-list-box-label-wrapper {
-  display: table-cell;
-  vertical-align: top; }
-
-.firebaseui-list-box-dialog-button {
-  color: rgba(0, 0, 0, 0.87);
-  direction: ltr;
-  font-size: 16px;
-  font-weight: normal;
-  height: initial;
-  line-height: normal;
-  min-height: 48px;
-  padding: 14px 24px;
-  text-align: left;
-  text-transform: none;
-  width: 100%; }
-
-.firebaseui-phone-number-error {
-  /* Align this with the national number input. Add a margin of
-   * button width (90px) + button margin (24px). */
-  margin-left: 114px; }
-
-.firebaseui-busy-indicator {
-  height: 2px;
-  left: 0;
-  position: absolute;
-  top: 55px;
-  width: 100%; }
-
-.firebaseui-callback-indicator-container .firebaseui-busy-indicator {
-  top: 0px; }
-
-.firebaseui-callback-indicator-container {
-  height: 120px; }
-
-.firebaseui-new-password-component {
-  display: inline-block;
-  position: relative;
-  width: 100%; }
-
-.firebaseui-input-floating-button {
-  background-position: center;
-  background-repeat: no-repeat;
-  display: block;
-  height: 24px;
-  position: absolute;
-  right: 0;
-  top: 20px;
-  width: 24px; }
-
-.firebaseui-input-toggle-on {
-  background-image: url("https://www.gstatic.com/images/icons/material/system/1x/visibility_black_24dp.png"); }
-
-.firebaseui-input-toggle-off {
-  background-image: url("https://www.gstatic.com/images/icons/material/system/1x/visibility_off_black_24dp.png"); }
-
-.firebaseui-input-toggle-focus {
-  opacity: 0.87; }
-
-.firebaseui-input-toggle-blur {
-  opacity: 0.38; }
-
-.firebaseui-recaptcha-wrapper {
-  display: table;
-  margin: 0 auto;
-  padding-bottom: 8px; }
-
-.firebaseui-recaptcha-container {
-  display: table-cell; }
-
-.firebaseui-recaptcha-error-wrapper {
-  caption-side: bottom;
-  display: table-caption; }
-
-.firebaseui-change-phone-number-link {
-  display: block; }
-
-.firebaseui-resend-container {
-  direction: ltr;
-  margin: 20px 0;
-  text-align: center; }
-
-.firebaseui-id-resend-countdown {
-  color: rgba(0, 0, 0, 0.38); }
-
-/**
- * This div holds the invisible reCAPTCHA badge. The float property is needed
- * as it messes up the cancel and submit buttons to align vertically when they
- * should horizontally.
- */
-.firebaseui-id-page-phone-sign-in-start .firebaseui-form-actions div {
-  float: left; }
-
-@media (max-width: 480px) {
-  .firebaseui-container {
-    box-shadow: none;
-    max-width: none;
-    width: 100%; }
-  .firebaseui-card-header {
-    border-bottom: 1px solid #e0e0e0;
-    margin-bottom: 16px;
-    padding: 16px 24px 0 24px; }
-  .firebaseui-title {
-    padding-bottom: 16px; }
-  .firebaseui-card-actions {
-    padding-right: 24px; }
-  .firebaseui-busy-indicator {
-    top: 0px; } }
-
-/*
- * Bootstrap applies styles to all <label> elements, so override those styles.
- */
-.mdl-textfield__label {
-  font-weight: normal;
-  margin-bottom: 0; }
